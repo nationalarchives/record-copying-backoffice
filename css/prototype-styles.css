@@ -1,0 +1,75 @@
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.dashboard-component {
+    padding: 1em;
+    background-color: #FEFEFE;
+    border: 1px solid #DEDEDE;
+}
+
+.responsive-table {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.responsive-table table {
+    width: 100%;
+    max-width: 100%;
+}
+
+table {
+    text-align: left;
+    border-collapse: separate;
+    empty-cells: hide;
+
+}
+
+tr {
+    background-color: #FFF;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEFEF;
+}
+
+.generatedcontent th span {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.generatedcontent th::before {
+    content: attr(data-shortform);
+}
+
+th:first-child {
+    text-align: left;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    background-color: rgba(252, 228, 92, 0.51);
+    font-weight: bold;
+
+}
+
+th:last-child, td:last-child {
+    border-left: 1px solid #383838;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    th, td {
+        padding: 1em;
+    }
+    .generatedcontent th::before {
+        content: attr(data-longform);
+    }
+}

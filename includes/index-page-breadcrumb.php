@@ -2,9 +2,7 @@
     <div class="col starts-at-full ends-at-half clr">
         <nav id="breadcrumb">
             <ul>
-                <li><a href="http://www.nationalarchives.gov.uk/">Home</a></li>
-                <li><a href="http://discovery.nationalarchives.gov.uk/" class="breadcrumbs">...</a></li>
-                <li><a href="http://discovery.nationalarchives.gov.uk/results/r?_q=Nelson" class="breadcrumbs">...</a> ...
+                <li><a href="http://www.nationalarchives.gov.uk/">Home</a></li> Dashboard
                 </li>
             </ul>
         </nav>
