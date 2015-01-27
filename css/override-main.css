@@ -5,3 +5,8 @@ This file contains a number of styles that exist to override the core styles tha
 Care should be taken therefore in applying these to the application, and they have been separated for this reason.
 
 */
+
+#account-controls .currently-selected a {
+    color: #DEDEDE;
+    border-bottom: 5px solid #FFF;
+}
