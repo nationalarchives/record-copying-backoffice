@@ -1,3 +1,8 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -8,6 +13,7 @@
     padding: 1em;
     background-color: #FEFEFE;
     border: 1px solid #DEDEDE;
+    margin-bottom: 2em;
 }
 
 .responsive-table {
@@ -24,7 +30,6 @@ table {
     text-align: left;
     border-collapse: separate;
     empty-cells: hide;
-
 }
 
 tr {
@@ -33,6 +38,12 @@ tr {
 
 tr:nth-child(even) {
     background-color: #EFEFEF;
+}
+
+tr:last-child td {
+    border-top: 1px solid #DDD;
+    font-weight: bold;
+    
 }
 
 .generatedcontent th span {
@@ -56,7 +67,7 @@ td:nth-child(2), th:nth-child(2) {
 }
 
 th:last-child, td:last-child {
-    border-left: 1px solid #383838;
+    border-left: 1px solid #DDD;
     font-weight: bold;
 }
 

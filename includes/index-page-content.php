@@ -4,9 +4,6 @@
             <h1><span><span>Dashboard</span></span></h1>
         </div>
         <div class="breather">
-
-            <h2 class="inline">Page count dashboard</h2>
-
             <form method="get">
                 <label class="inline" for="week-selection">Show week commencing</label>
                 <select name="week-selection" id="week-selection">
@@ -15,7 +12,10 @@
                     <option value="">Monday 2nd February 2015</option>
                 </select>
             </form>
+            <h2 class="inline">Page count dashboard</h2>
             <?php require_once('includes/page-count-dashboard.php'); ?>
+            <h2 class="inline">Copying dashboard</h2>
+            <?php require_once('includes/copying-dashboard.php'); ?>
         </div>
     </div>
 </section>
