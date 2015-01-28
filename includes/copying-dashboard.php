@@ -51,7 +51,7 @@
                 <td><a href="">28</a></td>
             </tr>
             <tr>
-                <th scope="row">Certificates of naturalisation</th>
+                <th scope="row" data-longform="Certificates of naturalisation" data-shortform="Cert. Nat"><span>Certificates of naturalisation</span></th>
                 <td><a href="">4</a></td>
                 <td><a href="">1</a></td>
                 <td><a href="">4</a></td>
