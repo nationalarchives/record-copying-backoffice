@@ -19,15 +19,15 @@
         <div id="account-controls-wrapper">
             <div id="account-controls" class="container">
                 <ul>
-                    <li class="currently-selected"><a href="">Dashboard</a></li>
-                    <li><a href="">Admin tools</a></li>
-                    <li><a href="">Staff audit</a></li>
-                    <li><a href="">Create page check</a></li>
-                    <li><a href="">Printing</a></li>
-                    <li><a href="">Reports</a></li>
-                    <li><a href="">Refunds</a></li>
-                    <li><a href="">Postage</a></li>
-                    <li class="suspended"><a href=""><span>Suspended jobs (16)</span></a></li>
+                    <li id="dashboard"><a href="">Dashboard</a></li>
+                    <li id="admin-tools"><a href="">Admin tools</a></li>
+                    <li id="staff-audit"><a href="">Staff audit</a></li>
+                    <li id="create-page-check"><a href="">Create page check</a></li>
+                    <li id="printing"><a href="">Printing</a></li>
+                    <li id="reports"><a href="">Reports</a></li>
+                    <li id="refunds"><a href="">Refunds</a></li>
+                    <li id="postage"><a href="">Postage</a></li>
+                    <li id="suspended-jobs" class="suspended"><a href=""><span>Suspended jobs (16)</span></a></li>
                 </ul>
             </div>
         </div>
