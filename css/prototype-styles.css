@@ -63,6 +63,10 @@ tr:nth-child(even) {
     background-color: #EFEFEF;
 }
 
+.multi-total {
+    margin-bottom: 1em;
+}
+
 .multi-total tr:last-child td {
     border-top: 1px solid #DDD;
     font-weight: bold;
@@ -101,11 +105,12 @@ th, td {
 
 .staff-member {
     font-size: 0.85em;
-    background-color: #CDCDCD;
+    background-color: #FFF;
     border-radius: 3px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.2em;
+    border: 1px solid #DDD;
 }
 
 #account-controls .suspended a {

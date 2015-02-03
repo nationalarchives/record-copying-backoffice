@@ -75,5 +75,8 @@
                 <td><a href="">157</a></td>
             </tr>
         </table>
+        <div class="button-holder">
+            <a class="discoveryPrimaryCallToActionLink" href="">Previous week</a> <a class="discoveryPrimaryCallToActionLink" href="">Next week</a>
+        </div>
     </div>
 </div>
