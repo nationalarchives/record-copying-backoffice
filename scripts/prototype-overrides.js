@@ -8,4 +8,5 @@
 $('a', '#holds-breadcrumb, #page-header').on('click', function(e) {
     console.log('Click default prevented by prototype-overrides.js');
     e.preventDefault();
-})
+});
+
