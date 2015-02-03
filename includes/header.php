@@ -27,6 +27,7 @@
                     <li><a href="">Reports</a></li>
                     <li><a href="">Refunds</a></li>
                     <li><a href="">Postage</a></li>
+                    <li class="suspended"><a href=""><span>Suspended jobs (16)</span></a></li>
                 </ul>
             </div>
         </div>

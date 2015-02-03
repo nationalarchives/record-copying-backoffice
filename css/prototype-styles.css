@@ -76,6 +76,18 @@ th, td {
     text-align: center;
 }
 
+#account-controls .suspended a {
+    color: #FCE45C;
+}
+
+#account-controls .suspended a span {
+    background-color: #000000;
+    border-radius: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;

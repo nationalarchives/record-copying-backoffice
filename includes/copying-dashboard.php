@@ -19,9 +19,9 @@
                 <td><a href="">4</a></td>
                 <td><a href="">1</a></td>
                 <td><a href="">4</a></td>
-                <td><a href="">3</a></td>
+                <td>0</td>
                 <td><a href="">8</a></td>
-                <td><a href="">5</a></td>
+                <td>0</td>
                 <td><a href="">6</a></td>
                 <td><a href="">6</a></td>
                 <td><a href="">28</a></td>
@@ -32,7 +32,7 @@
                 <td><a href="">1</a></td>
                 <td><a href="">4</a></td>
                 <td><a href="">3</a></td>
-                <td><a href="">8</a></td>
+                <td>0</td>
                 <td><a href="">5</a></td>
                 <td><a href="">6</a></td>
                 <td><a href="">6</a></td>
@@ -46,7 +46,7 @@
                 <td><a href="">3</a></td>
                 <td><a href="">8</a></td>
                 <td><a href="">5</a></td>
-                <td><a href="">6</a></td>
+                <td>0</td>
                 <td><a href="">6</a></td>
                 <td><a href="">28</a></td>
             </tr>
@@ -58,7 +58,7 @@
                 <td><a href="">3</a></td>
                 <td><a href="">8</a></td>
                 <td><a href="">5</a></td>
-                <td><a href="">6</a></td>
+                <td>0</td>
                 <td><a href="">6</a></td>
                 <td><a href="">28</a></td>
             </tr>
@@ -72,7 +72,7 @@
                 <td><a href="">5</a></td>
                 <td><a href="">6</a></td>
                 <td><a href="">6</a></td>
-                <td></td>
+                <td><a href="">157</a></td>
             </tr>
         </table>
     </div>
