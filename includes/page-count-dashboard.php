@@ -1,6 +1,6 @@
 <div class="dashboard-component">
     <div class="responsive-table">
-        <table>
+        <table class="multi-total">
             <caption class="visually-hidden">Page count dashboard</caption>
             <tr>
                 <td></td>

@@ -7,6 +7,5 @@ Care should be taken therefore in applying these to the application, and they ha
 */
 
 #account-controls .currently-selected a {
-    color: #DEDEDE;
     border-bottom: 5px solid #FFF;
 }

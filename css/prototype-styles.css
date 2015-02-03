@@ -13,7 +13,8 @@ html {
     padding: 1em;
     background-color: #FEFEFE;
     border: 1px solid #DEDEDE;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .responsive-table {
@@ -24,6 +25,28 @@ html {
 .responsive-table table {
     width: 100%;
     max-width: 100%;
+}
+
+.definitions {
+    position: relative;
+    padding: 2em 1em 1em 1em;
+    font-size: 0.85em;
+    background-color: #EFEFEF;
+    border: 1px solid #383838;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.key {
+    position: absolute;
+    padding: 0.5em;
+    background-color: #383838;
+    color: #FFF;
+    top: 0;
+    left: 0;
+
 }
 
 table {
@@ -40,33 +63,33 @@ tr:nth-child(even) {
     background-color: #EFEFEF;
 }
 
-tr:last-child td {
+.multi-total tr:last-child td {
     border-top: 1px solid #DDD;
     font-weight: bold;
     
 }
 
-.generatedcontent th span {
+.generatedcontent .multi-total th span {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.generatedcontent th::before {
+.generatedcontent .multi-total th::before {
     content: attr(data-shortform);
 }
 
-th:first-child {
+.multi-total th:first-child {
     text-align: left;
 }
 
-td:nth-child(2), th:nth-child(2) {
+.multi-total td:nth-child(2), .multi-total th:nth-child(2) {
     background-color: rgba(252, 228, 92, 0.51);
     font-weight: bold;
 
 }
 
-th:last-child, td:last-child {
+.multi-total th:last-child, .multi-total td:last-child {
     border-left: 1px solid #DDD;
     font-weight: bold;
 }
@@ -74,6 +97,15 @@ th:last-child, td:last-child {
 th, td {
     padding: 0.5em;
     text-align: center;
+}
+
+.staff-member {
+    font-size: 0.85em;
+    background-color: #CDCDCD;
+    border-radius: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
 }
 
 #account-controls .suspended a {
@@ -88,11 +120,28 @@ th, td {
     padding-bottom: 0.2em;
 }
 
+.sortable tr:first-child th::after {
+    content: url('../images/sortable.gif');
+}
+
+
+.sortable tr:first-child th:first-child::after {
+    content: url('../images/asc.gif');
+}
+
+.sortable tr:first-child th:hover::after {
+    content: url('../images/asc.gif');
+}
+.sortable tr:first-child th:hover {
+    cursor: pointer;
+    background-color: #DDD;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;
     }
-    .generatedcontent th::before {
+    .generatedcontent .multi-total th::before {
         content: attr(data-longform);
     }
 }

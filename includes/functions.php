@@ -8,7 +8,7 @@
 
 function echoDate() {
     date_default_timezone_set('UTC');
-    echo(date('l jS F Y h:i a'));
+    echo(date('l jS F Y'));
 }
 
 function scanFiles() {
