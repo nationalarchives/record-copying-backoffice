@@ -13,7 +13,7 @@
                 </select>
             </form>
             <h2 class="inline">Page count dashboard</h2>
-            <?php require_once('includes/page-count-dashboard.php'); ?>
+            <?php require_once('includes/page-check-dashboard.php'); ?>
             <?php require_once('includes/search-form.php') ?>
             <h2 class="inline">Copying dashboard</h2>
             <?php require_once('includes/copying-dashboard.php'); ?>

@@ -4,8 +4,8 @@
 <body class="reports">
 <?php require_once('includes/header.php'); ?>
 <main id="page_wrap" class="container" role="main">
-    <?php require_once('includes/page-counts-due-breadcrumb.php'); ?>
-    <?php require_once('includes/page-counts-due-content.php'); ?>
+    <?php require_once('includes/page-checks-due-breadcrumb.php'); ?>
+    <?php require_once('includes/page-checks-due-content.php'); ?>
 </main>
 <?php require_once('includes/footer.php'); ?>
 <?php require_once('includes/footer-scripts.php'); ?>
