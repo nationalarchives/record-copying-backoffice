@@ -23,7 +23,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <td><a href="">RC000051</a></td>
+                            <td><a href="page-check.php">RC000051</a></td>
                             <td>Revised</td>
                             <td>ZPER 2/5</td>
                             <td>28/12/2015</td>

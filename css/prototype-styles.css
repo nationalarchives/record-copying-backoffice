@@ -50,10 +50,10 @@ dt {
     color: #FFF;
     top: 0;
     left: 0;
+
 }
 
 table {
-    text-align: left;
     border-collapse: separate;
     empty-cells: hide;
 }
@@ -93,17 +93,15 @@ tr:nth-child(even) {
 .multi-total td:nth-child(2), .multi-total th:nth-child(2) {
     background-color: rgba(252, 228, 92, 0.51);
     font-weight: bold;
+}
 
+.multi-total td, .multi-total th {
+    text-align: center;
 }
 
 .multi-total th:last-child, .multi-total td:last-child {
     border-left: 1px solid #DDD;
     font-weight: bold;
-}
-
-th, td {
-    padding: 0.5em;
-    text-align: center;
 }
 
 .staff-member {
@@ -128,6 +126,14 @@ th, td {
     padding-bottom: 0.2em;
 }
 
+.sortable {
+    text-align: center;
+}
+
+.sortable td, .sortable th {
+    text-align: center;
+}
+
 .sortable tr:first-child th::after {
     content: url('../images/sortable.gif');
 }
@@ -143,6 +149,21 @@ th, td {
 .sortable tr:first-child th:hover {
     cursor: pointer;
     background-color: #DDD;
+}
+
+.page-check th, .page-check td {
+    text-align: left;
+}
+
+.process-selection {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #DDD;
+    background-color: #EFEFEF;
+}
+
+.staff-comments {
+    margin-top: 2em;
 }
 
 @media only screen and (min-width: 1024px) {
