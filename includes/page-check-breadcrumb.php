@@ -11,7 +11,6 @@
     <div class="col starts-at-full ends-at-half clr">
         <nav id="page-controls">
             <ul>
-                <li><a href="">Send to customer</a></li>
                 <li><a href="">Print copy</a></li>
                 <li><a href="">Suspend</a></li>
                 <li><a href="">Refund page check</a></li>

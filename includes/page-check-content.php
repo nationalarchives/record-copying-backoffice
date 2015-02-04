@@ -101,7 +101,8 @@
                         </div>
                     </fieldset>
                     <div class="button-holder">
-                        <input type="submit" name="name" value="Update page check information">
+                        <input type="submit" value="Update"/>
+                        <input type="submit" name="name" value="Update and send to customer">
                     </div>
                 </form>
             </div>
