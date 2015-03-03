@@ -3,7 +3,7 @@
         <nav id="breadcrumb">
             <ul>
                 <li><a href="http://www.nationalarchives.gov.uk/">Home</a><a href="">Reports</a></li>
-                Page check: RC00001
+                Reference number: RC00001
                 </li>
             </ul>
         </nav>
