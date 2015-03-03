@@ -9,35 +9,35 @@
                             <input type="checkbox">
                             <label>
                                 Pending page check
-                                <span class="filterNumber">(1,942)</span>
+                                <span class="filterNumber">(42)</span>
                             </label>
                         </li>
                         <li>
                             <input type="checkbox">
                             <label>
                                 Page check in progress
-                                <span class="filterNumber">(3,887)</span>
+                                <span class="filterNumber">(87)</span>
                             </label>
                         </li>
                         <li>
                             <input type="checkbox">
                             <label>
                                 Copying order pending
-                                <span class="filterNumber">(5,826)</span>
+                                <span class="filterNumber">(26)</span>
                             </label>
                         </li>
                         <li>
                             <input type="checkbox">
                             <label>
                                 Order being copied
-                                <span class="filterNumber">(12,888)</span>
+                                <span class="filterNumber">(88)</span>
                             </label>
                         </li>
                         <li>
                             <input type="checkbox">
                             <label>
                                 Complete and dispatched
-                                <span class="filterNumber">(16,845)</span>
+                                <span class="filterNumber">(845)</span>
                             </label>
                         </li>
                     </ul><input name="Refine dates" value="Refine" type="submit" alt="Refine dates" title="Refine dates">
@@ -64,7 +64,23 @@
         </ul>
     </div>
     <div class="col ends-at-two-thirds clr box">
-
+        <ul id="search-control-panel">
+            <li>290 <span class="not-at-smaller">orders</span></li>
+            <li id="sort-form">
+                <form method="get">            
+                    <fieldset>
+                    <span class="not-at-smaller"> Sorted</span> by:
+                    <select>
+                        <option value="0">Due date - ascending</option>
+                        <option value="0">Due date - descending</option>
+                    </select>
+                    <input class="discoverySecondaryCallToActionLink" type="submit" value="Sort" id="sort" title="Sort search results">
+                </fieldset>
+            </form>    </li>
+            <li id="printable-view">
+                <a title="print">Print these results</a>
+            </li>
+        </ul>
     </div>
 </div>
 </section>
