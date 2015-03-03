@@ -82,7 +82,7 @@
                                 <div>
                                     <div class="field-row">
                                         <label for="comments-to-customer">Comments to customer</label>
-                                        <textarea id="comments-to-customer" rows="5"></textarea>
+                                        <textarea id="comments-to-customer" rows="5" disabled>All pages can be copied</textarea>
                                     </div>
                                     <div class="field-row">
                                         <label for="comments-to-staff">Comments to staff</label>
