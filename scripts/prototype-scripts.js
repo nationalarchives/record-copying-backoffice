@@ -18,6 +18,22 @@ if($(".confirm-and-pay").length) {
 
 }
 
+// $('.print-link').on('click', function(){
+//     $(this).text('hello');
+// })
+
+$('.print-link').on('click', function(){
+    var $this = $(this),
+        currentText = $this.text();
+
+    if(currentText === 'Add to print queue') {
+        $this.text('Added to print queue');
+    } else {
+        $this.text('Add to print queue');
+    }
+    
+});
+
 // Angular
 
 var app = angular.module("recordCopying", []);

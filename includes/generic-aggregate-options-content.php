@@ -40,11 +40,11 @@
                                 <span class="filterNumber">(845)</span>
                             </label>
                         </li>
-                    </ul><input name="Refine dates" value="Refine" type="submit" alt="Refine dates" title="Refine dates">
+                    </ul>
                 </div>
             </li>
             <li>
-                <h3><a href="#" class="filter-toggler expanded">Due date</a></h3>
+                <h3><a href="#" class="filter-toggler expanded">Target date</a></h3>
                 <div class="filter-togglee">
                     <ul>
                         <li>
@@ -55,32 +55,46 @@
                                 <option value="">Monday 2nd February 2015</option>
                             </select>
                         </li>
-                        <li></li>
+                        <li>
+                            <input type="checkbox">
+                            <label for="">Include currently overdue (34)</label>
+                        </li>
                     </ul>
-
-                    <input name="Refine dates" value="Refine" type="submit" alt="Refine dates" title="Refine dates">
                 </div>
             </li>
         </ul>
     </div>
     <div class="col ends-at-two-thirds clr box">
         <ul id="search-control-panel">
-            <li>290 <span class="not-at-smaller">orders</span></li>
+            <li>38 <span class="not-at-smaller">orders</span></li>
             <li id="sort-form">
                 <form method="get">            
                     <fieldset>
-                    <span class="not-at-smaller"> Sorted</span> by:
-                    <select>
-                        <option value="0">Due date - ascending</option>
-                        <option value="0">Due date - descending</option>
-                    </select>
-                    <input class="discoverySecondaryCallToActionLink" type="submit" value="Sort" id="sort" title="Sort search results">
-                </fieldset>
-            </form>    </li>
-            <li id="printable-view">
-                <a title="print">Print these results</a>
-            </li>
-        </ul>
+                        <span class="not-at-smaller"> Sorted</span> by:
+                        <select>
+                            <option value="0">Target date - ascending</option>
+                            <option value="0">Target date - descending</option>
+                        </select>
+                        <input class="discoverySecondaryCallToActionLink" type="submit" value="Sort" id="sort" title="Sort search results">
+                    </fieldset>
+                </form>    </li>
+                <li id="printable-view">
+                    <a title="print">Print all</a>
+                    <a href="#" id="select-and-print">Print selected</a>
+                </li>
+            </ul>
+            <ul id="search-results">
+                <?php for ($i=0; $i < 3; $i++) { 
+                    $rand = "RC " . rand(1000000, 9000000) . " 15";
+                    $statuses = array('Pending page check', 'Page check in progress', 'Copy order pending', 'Order being copied', 'Copied and dispatched'); 
+                    $randomStatus = $statuses[array_rand($statuses)];
+                    printf("<li class='order-item'><h3><a href='details.php'>%s</a></h3>", $rand);
+                    printf("<p class='smaller'><strong>Status:</strong> %s</p>", $randomStatus);
+                    printf("<span class='creator-type'><a href='#' class='print-link' id='%d'>Add to print queue</a></span>", $i);
+                    print("</li>");
+                }
+                ?>
+            </ul>
+        </div>
     </div>
-</div>
 </section>

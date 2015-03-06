@@ -51,10 +51,6 @@
                             <textarea id="comments-to-staff" rows="5"></textarea>
                         </div>
                         <div class="field-row">
-                            <label for="suspension-reasons">Suspension reasons</label>
-                            <textarea id="suspension-reasons" rows="5"></textarea>
-                        </div>
-                        <div class="field-row">
                             <input type="checkbox" id="whole-document">
                             <label for="whole-document">Order for whole document</label>
                         </div>
