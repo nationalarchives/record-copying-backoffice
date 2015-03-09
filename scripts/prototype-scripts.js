@@ -18,11 +18,9 @@ if($(".confirm-and-pay").length) {
 
 }
 
-// $('.print-link').on('click', function(){
-//     $(this).text('hello');
-// })
+$('.print-link').on('click', function(e){
+    e.preventDefault();
 
-$('.print-link').on('click', function(){
     var $this = $(this),
         currentText = $this.text();
 
@@ -31,8 +29,36 @@ $('.print-link').on('click', function(){
     } else {
         $this.text('Add to print queue');
     }
-    
+
+    var count = $.countElsWithSpecificText('.print-link', 'Added to print queue');
+    $.createMultiPrintLink(count);
+
 });
+
+$.countElsWithSpecificText = function(selector, text) {
+    var counter = 0; 
+    $(selector).each(function(index, element){
+        $el = $(element);
+
+        if($el.text() === text) {
+            counter++;
+        }
+    });
+    return counter; 
+}
+
+$.createMultiPrintLink = function(count) {
+    var message = "";
+    if(count > 0) {
+        message = "Print selected job sheets (" + count + ")";
+    } else {
+        message = false;
+    }
+
+    (message) ? $('#select-and-print').text(message).show() : $('#select-and-print').hide();
+    
+}
+
 
 // Angular
 

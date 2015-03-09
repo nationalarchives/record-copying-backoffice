@@ -80,11 +80,11 @@
                 </form>    </li>
                 <li id="printable-view">
                     <a title="print">Print all</a>
-                    <a href="#" id="select-and-print">Print selected</a>
+                    <a href="#" id="select-and-print">&nbsp</a>
                 </li>
             </ul>
             <ul id="search-results">
-                <?php for ($i=0; $i < 3; $i++) { 
+                <?php for ($i=0; $i < 38; $i++) { 
                     $rand = "RC " . rand(1000000, 9000000) . " 15";
                     $statuses = array('Pending page check', 'Page check in progress', 'Copy order pending', 'Order being copied', 'Copied and dispatched'); 
                     $randomStatus = $statuses[array_rand($statuses)];
