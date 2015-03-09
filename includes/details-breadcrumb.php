@@ -12,7 +12,7 @@
         <nav id="page-controls">
             <ul>
                 <li><a href="">Print order details</a></li>
-                <li><a href="">Suspend</a></li>
+                <li><a href="suspend.php" class="proceed">Suspend</a></li>
             </ul>
         </nav>
     </div>

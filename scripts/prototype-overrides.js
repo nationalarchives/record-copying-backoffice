@@ -6,8 +6,13 @@
 //  user interface elements that are not relevant to the prototype tasks
 
 $('a', '#holds-breadcrumb').on('click', function (e) {
-    console.log('Click default prevented by prototype-overrides.js');
-    e.preventDefault();
+    $this = $(this);
+    if($this.hasClass('proceed')) {
+        console.log('Click allowed because of "proceed" class presence. See prototype-overrides.js');
+    } else {    
+        console.log('Click default prevented by prototype-overrides.js');
+        e.preventDefault();
+    }
 });
 
 // Updating the selected state of the menu to reflect a class on the body
