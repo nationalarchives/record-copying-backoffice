@@ -12,7 +12,7 @@
                     <option value="">Monday 2nd February 2015</option>
                 </select>
             </form>
-            <h2 class="inline">Page count dashboard</h2>
+            <h2 class="inline">Page check dashboard</h2>
             <?php require_once('includes/page-check-dashboard.php'); ?>
             <?php require_once('includes/search-form.php') ?>
             <h2 class="inline">Copying dashboard</h2>
