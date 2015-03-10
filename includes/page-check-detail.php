@@ -19,7 +19,7 @@ switch($status) {
     $statusText = "No status passed in GET array";
 }
 ?>
-<section class="row">
+<section class="row new-page">
     <div class="col starts-at-full clr holding-box">
         <div class="heading-holding-banner">
             <h1><span><span>Order details</span></span></h1>

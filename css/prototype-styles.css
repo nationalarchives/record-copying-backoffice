@@ -175,6 +175,10 @@ input[type=date] {
     padding: 5px 3px;
 }
 
+.new-page {
+    page-break-inside: avoid;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;

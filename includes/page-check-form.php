@@ -1,4 +1,4 @@
-<div class="holds-columns-together">
+<div class="holds-columns-together new-page">
     <form method="get">
         <fieldset>
             <h2><span><span>Page check job sheet</span></span></h2>
