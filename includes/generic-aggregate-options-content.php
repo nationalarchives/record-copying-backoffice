@@ -79,7 +79,7 @@
                     </fieldset>
                 </form>    </li>
                 <li id="printable-view">
-                    <a title="print">Print all</a>
+                    <a title="print" href="multi-print.php">Print all</a>
                     <a href="multi-print.php" id="select-and-print">&nbsp</a>
                 </li>
             </ul>
