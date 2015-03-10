@@ -3,15 +3,8 @@
         <nav id="breadcrumb">
             <ul>
                 <li><a href="http://www.nationalarchives.gov.uk/">Home</a><a href="">Reports</a></li>
-                Reference number: RC00001
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="col starts-at-full ends-at-half clr">
-        <nav id="page-controls">
-            <ul>
-                <li><a href="">Print order details</a></li>
+                <li><a href="">Reference number: RC00001</a></li>
+                <li>Order abandonment</li>
             </ul>
         </nav>
     </div>

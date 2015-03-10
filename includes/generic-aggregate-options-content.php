@@ -2,42 +2,42 @@
     <div class="col ends-at-one-third clr box" id="search-filters">
         <ul class="available-filters">
             <li>
-                <h3><a href="#" class="filter-toggler expanded">Status</a></h3>
+                <h3><a href="#" class="filter-toggler expanded">Page checks</a></h3>
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <input type="checkbox">
-                            <label>
-                                Pending page check
+                            <input checked="checked" id="new-page-check" type="checkbox">
+                            <label for="new-page-check">
+                                New 
                                 <span class="filterNumber">(42)</span>
                             </label>
                         </li>
                         <li>
-                            <input type="checkbox">
-                            <label>
-                                Page check in progress
+                            <input id="overdue-page-check" type="checkbox">
+                            <label for="overdue-page-check">
+                                Overdue
                                 <span class="filterNumber">(87)</span>
                             </label>
                         </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3><a href="#" class="filter-toggler expanded">Copying orders</a></h3>
+                <div class="filter-togglee">
+                    <ul>
                         <li>
-                            <input type="checkbox">
-                            <label>
-                                Copying order pending
-                                <span class="filterNumber">(26)</span>
+                            <input id="new-copying-order" type="checkbox">
+                            <label for="new-copying-order">
+                                New 
+                                <span class="filterNumber">(84)</span>
                             </label>
                         </li>
                         <li>
-                            <input type="checkbox">
-                            <label>
-                                Order being copied
-                                <span class="filterNumber">(88)</span>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>
-                                Complete and dispatched
-                                <span class="filterNumber">(845)</span>
+                            <input id="overdue-copying-order" type="checkbox">
+                            <label for="overdue-copying-order">
+                                Overdue 
+                                <span class="filterNumber">(68)</span>
                             </label>
                         </li>
                     </ul>
@@ -48,17 +48,17 @@
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <label class="inline" for="week-selection">Week commencing: </label>
+                            <label for="week-selection">From:</label>
                             <select name="week-selection" id="week-selection">
-                                <option value="">Monday 19th January 2015</option>
-                                <option value="" selected="">Monday 26th January 2015</option>
-                                <option value="">Monday 2nd February 2015</option>
+                                <option value="">1 February 2015</option>
                             </select>
-                        </li>
+                        </li>                                                
                         <li>
-                            <input type="checkbox">
-                            <label for="">Include currently overdue (34)</label>
-                        </li>
+                            <label for="week-selection">To:</label>
+                            <select name="week-selection" id="week-selection">
+                                <option value="">1 February 2015</option>
+                            </select>
+                        </li> 
                     </ul>
                 </div>
             </li>

@@ -62,69 +62,15 @@ $.createMultiPrintLink = function(count) {
 
 // Angular
 
-var app = angular.module("recordCopying", []);
+var app = angular.module("recordCopyingBackOffice", []);
 
-app.controller("startPageCheck", function($scope, $log) {
-    $scope.data = {};
-    $scope.data.showPageCheckForm = false;
-
-    $scope.togglePageCheckForm = function() {
-        $log.log('togglePageCheckForm function called');
-        $scope.data.showPageCheckForm = !$scope.data.showPageCheckForm;
-    }
-});
-
-app.controller("confirmAndPay", function ($scope, $log) {
-
-    $scope.quantities = {
-        a3Pages : 25,
-        a3PlusPages : 3
-    };
-
-    $scope.prices = {
-        a3PaperColourPrice : 3.00,
-        a3PaperMonoPrice : 1.00,
-        a3PlusPaperPrice : 13.00,
-        a3DigitalPrice : 2.80,
-        a3PlusDigitalPrice : 10.00
-    };
-
-    $scope.options = {
-        deliveryType : "paper",
-        printingOption : "colour",
-        deliveryAddress : "stored",
-        selectedCountry : 'United Kingdom',
-        availableCountries : [
-            'United Kingdom',
-            'Australia',
-            'New Zealand',
-            'Zambia'
-        ]
-    };
-
-    $scope.totalPrice = false;
-
-    $scope.calculateTotalPrice = function (type, printingOption) {
-        if(type == "digital") {
-            $scope.totalPrice = ($scope.quantities.a3Pages * $scope.prices.a3DigitalPrice) + ($scope.quantities.a3PlusPages * $scope.prices.a3PlusDigitalPrice);
-        } else if(type == "paper") {
-            switch (printingOption) {
-                case "colour" :
-                    $scope.totalPrice = ($scope.quantities.a3Pages * $scope.prices.a3PaperColourPrice) + ($scope.quantities.a3PlusPages * $scope.prices.a3PlusPaperPrice);
-                    break;
-                case "mono" :
-                    $scope.totalPrice = ($scope.quantities.a3Pages * $scope.prices.a3PaperMonoPrice) + ($scope.quantities.a3PlusPages * $scope.prices.a3PlusPaperPrice);
-                    break;
-                default :
-                    $log.log("Problem with calculateTotalPrice()")
-            }
-
+app.controller("suspendOrder", function($scope) {
+    $scope.data = {
+        reason : "",
+        reasonText : {
+            insufficient : "It has been necessary to suspend this order\n\n due to the information provided being insufficient", 
+            incorrect : "The information provided was incorrect"
         }
     };
-
-    $scope.totalPages = function () {
-        return $scope.quantities.a3Pages + $scope.quantities.a3PlusPages;
-    };
-
-
 })
+
