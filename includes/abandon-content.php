@@ -3,28 +3,22 @@
 		<div class="heading-holding-banner">
 			<h1><span><span>Abandon order</span></span></h1>
 		</div>
-		<div class="breather">
-			<form method="get" action="">
-				<div class="grid-within-grid-two-item clr">
-					<div>
-						<div class="field-row">  
-							<label for="reason">Reason for suspension</label>
-							<select id="reason" ng-model="data.reason">
-								<option value="">Select a reason</option>
-								<option value="insufficient">In sufficient information provided by user</option>
-								<option value="incorrect">Incorrect information provided by user</option>
-							</select>
-						</div>  
-						<div class="field-row">
-							<label for="standard-text">Standard text (amend as needed before submitting)</label>
-							<textarea name="response" id="standard-text" cols="30" rows="10">{{ data.reasonText[data.reason] }}</textarea>
-						</div> 	
-					</div>
+		<div class="breather abandon-content">
+			<form method="get" action="abandonment-confirmation.php">
+				<div class="field-row">  
+					<label for="reason">Select a common reasons for abandonment</label>
+					<select ng-model="data.selectedReason" ng-options="item.name for item in data.reasons">
+					</select>
 				</div>
-				<div class="holds-columns-together">
-					<div class="button-holder">
-						<input type="submit" value="Update">
-						<input type="submit" value="Update and send to user">
+				<div ng-show="!!data.selectedReason.message">				
+					<div class="field-row">
+						<label for="standard-text">Message to user (amend as needed before submitting)</label>
+						<textarea name="response" id="standard-text" cols="30" rows="20">{{ data.selectedReason.message }}</textarea>
+					</div> 	
+					<div class="holds-columns-together abandon-buttons">
+						<div class="button-holder">
+							<input type="submit" value="Preview message before sending to user">
+						</div>
 					</div>
 				</div>
 			</form>
