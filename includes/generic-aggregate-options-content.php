@@ -80,7 +80,7 @@
                 </form>    </li>
                 <li id="printable-view">
                     <a title="print">Print all</a>
-                    <a href="#" id="select-and-print">&nbsp</a>
+                    <a href="multi-print.php" id="select-and-print">&nbsp</a>
                 </li>
             </ul>
             <ul id="search-results">

@@ -1,7 +1,7 @@
 <div class="holds-columns-together">
     <form method="get">
         <fieldset>
-            <h2><span><span>Comments from staff member conducting page check</span></span></h2>
+            <h2><span><span>Page check job sheet</span></span></h2>
             <div class="breather">
                 <div class="grid-within-grid-two-item staff-comments">
                     <div>
@@ -58,11 +58,14 @@
                 </div>
             </div> 
         </fieldset>
+        <?php if(!checkFileName('multi-print.php')) : ?>
         <div class="button-holder">
             <input type="hidden" name="status" value="page-check-completed">
             <a href="abandon.php" class="abandon-link">Abandon page check</a>
             <input type="submit" value="Update"/>
             <input type="submit" value="Update and send">
         </div>
+
+    <?php endif; ?>
     </form>
 </div>
