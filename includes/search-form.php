@@ -1,6 +1,6 @@
 <h2 class="visually-hidden">Search</h2>
 <div class="holds-columns-together" ng-app="recordCopyingBackOffice">
-    <form ng-controller="searchForms">
+    <form ng-controller="searchForms" action="generic-aggregate-options-page.php">
         <fieldset>
             <legend>Search type</legend>
             <div class="form-heading">
