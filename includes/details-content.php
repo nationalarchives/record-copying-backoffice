@@ -50,6 +50,10 @@
                     <td>4 N 1200</td>
                 </tr>
                 <tr>
+                    <th scope="row">Document date</th>
+                    <td>1941 Feb.-Oct</td>
+                </tr>
+                <tr>
                     <th scope="row">Description</th>
                     <td>DIVISIONS: 42ND. DIVISION: Reconnaisance Battalion</td>
                 </tr>
