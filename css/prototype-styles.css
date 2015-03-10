@@ -170,6 +170,14 @@ tr:nth-child(even) {
     margin-right: 0.5em;
 }
 
+.abandon-content {
+    padding-top: 1em;
+}
+
+.abandon-buttons {
+    margin-top: 1em;
+}
+
 input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
