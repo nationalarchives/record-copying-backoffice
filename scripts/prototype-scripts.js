@@ -74,3 +74,24 @@ app.controller("suspendOrder", function($scope) {
     };
 })
 
+app.controller("searchForms", function($scope, $log) {
+    $scope.searchOptions = ["Customer's name", "Customer's postcode", "Request reference number", "Date", "Date range", "Document reference", "Category"];
+
+
+    $scope.isDateRangeSearch = function(str) {
+        if(str == "Date range") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    $scope.isDateSearch = function(str) {
+        if(str == "Date") {
+            return true;
+        } else { 
+            return false;
+        }
+    }
+
+})
