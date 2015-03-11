@@ -71,19 +71,11 @@ app.controller("suspendOrder", function($scope, $log) {
         reasons : [
             {
                 name : 'Blank template', 
-                message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\nWe are unable to process your request\n\nRecords copying team'
+                message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\nWe are unable to process your request...\n\nRecords copying team'
             },
             {
                 name : 'Insufficient information', 
                 message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\nUnfortunately the information that you have provided is insufficient to enable us to process the page check. We cannot provide a page check if it would be necessary to search through a document to find specific pieces of information which may be located randomly throughout a document. In some cases, items which are listed is Discovery, our catalogue, are not physically separate documents. Instead they form part of a larger document and have to be located within that document in order to provide a page check. We will make every effort to locate such items but, occasionally, this is not possible\n\nThere are other ways for you to identify the material you want copied\n\n Record Copying Team'
-            },
-            {
-                name : 'Item not easily found', 
-                message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\n'
-            },
-            {
-                name : 'Research needed', 
-                message : 'Dear Customer,\n\nRecords Copying Team'
             }
         ]
     };

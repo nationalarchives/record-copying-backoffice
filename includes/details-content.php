@@ -11,6 +11,8 @@
                         break;
                     case 'page-check-completed' :
                         require_once('page-check-form-completed.php');
+                    case 'page-check-abandoned' : 
+                        require_once('page-check-abandoned.php');
                 }
             ?>
         </div>

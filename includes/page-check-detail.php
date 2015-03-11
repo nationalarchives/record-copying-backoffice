@@ -7,16 +7,19 @@ if(isset($_GET['status'])) {
 
 switch($status) {
     case 'pending':
-    $statusText = 'Page check pending';
-    break;
+        $statusText = 'Page check pending';
+        break;
     case 'in-progress':
-    $statusText = "Page check in progress";
-    break;
+        $statusText = "Page check in progress";
+        break;
     case 'page-check-completed':
-    $statusText = "Page check completed";
-    break;
+        $statusText = "Page check completed";
+        break;
+    case 'page-check-abandoned':
+        $statusText = "Page check abandoned";
+        break;
     default:
-    $statusText = "No status passed in GET array";
+        $statusText = "No status passed in GET array";
 }
 ?>
 <section class="row new-page">
