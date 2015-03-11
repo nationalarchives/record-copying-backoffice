@@ -187,6 +187,23 @@ input[type=date] {
     page-break-inside: avoid;
 }
 
+.message-preview {
+    border: 1px solid #383838;
+    background-color: #EFEFEF;
+    padding: 3em 2em;
+    position: relative;
+}
+
+.message-information {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9em;
+    padding: 0.2em 0.5em;
+    background-color: #383838;
+    color: #EFEFEF;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;
