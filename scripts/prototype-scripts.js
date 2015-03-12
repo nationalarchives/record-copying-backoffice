@@ -64,11 +64,10 @@ $.createMultiPrintLink = function(count) {
 
 var app = angular.module("recordCopyingBackOffice", []);
 
-app.controller("suspendOrder", function($scope, $log) {
-
-    $scope.data = {
-        selectedReason : '',
-        reasons : [
+app.factory("dataService", function() {
+    return {
+        getMessages : function() {
+            return [
             {
                 name : 'Blank template', 
                 message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\nWe are unable to process your request...\n\nRecords copying team'
@@ -77,12 +76,23 @@ app.controller("suspendOrder", function($scope, $log) {
                 name : 'Insufficient information', 
                 message : 'Dear Customer,\n\nThank you for contacting The National Archives with your request for a page check for the cost of copies of records.\n\nUnfortunately the information that you have provided is insufficient to enable us to process the page check. We cannot provide a page check if it would be necessary to search through a document to find specific pieces of information which may be located randomly throughout a document. In some cases, items which are listed is Discovery, our catalogue, are not physically separate documents. Instead they form part of a larger document and have to be located within that document in order to provide a page check. We will make every effort to locate such items but, occasionally, this is not possible\n\nThere are other ways for you to identify the material you want copied\n\n Record Copying Team'
             }
-        ]
+        ]},
+        getSearchOptions : function() {
+            return ["Customer's name", "Customer's postcode", "Request reference number", "Date", "Date range", "Document reference", "Category"];
+        }
+    }
+})
+
+app.controller("suspendOrder", function($scope, $log, dataService) {
+
+    $scope.data = {
+        selectedReason : '',
+        reasons : dataService.getMessages()
     };
 })
 
-app.controller("searchForms", function($scope, $log) {
-    $scope.searchOptions = ["Customer's name", "Customer's postcode", "Request reference number", "Date", "Date range", "Document reference", "Category"];
+app.controller("searchForms", function($scope, $log, dataService) {
+    $scope.searchOptions = dataService.getSearchOptions();
 
 
     $scope.isDateRangeSearch = function(str) {
