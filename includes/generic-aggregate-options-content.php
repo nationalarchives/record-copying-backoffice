@@ -1,7 +1,22 @@
 <section class="row row-tabbed-content">
     <div class="col ends-at-one-third clr box" id="search-filters">
+    <form ng-app>
         <ul class="available-filters">
             <li>
+                <h3><a href="#" class="filter-toggler expanded">Filter by</a></h3>
+                <div class="filter-togglee">
+                    <ul>
+                        <li>
+                            <select ng-model="selection" ng-init="selection='all'">
+                                <option value="all" label="All" class="">All</option>
+                                <option value="pagechecks" label="Page checks">Page checks</option>
+                                <option value="copyingorders" label="Copying orders">Copying orders</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li ng-show="selection == 'all' || selection == 'pagechecks'">
                 <h3><a href="#" class="filter-toggler expanded">Page checks</a></h3>
                 <div class="filter-togglee">
                     <ul>
@@ -10,6 +25,34 @@
                             <label for="new-page-check">
                                 New 
                                 <span class="filterNumber">(42)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="pending-page-check" type="checkbox">
+                            <label for="pending-page-check">
+                                Pending 
+                                <span class="filterNumber">(15)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="inprogress-page-check" type="checkbox">
+                            <label for="inprogress-page-check">
+                                In progress 
+                                <span class="filterNumber">(7)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="completed-page-check" type="checkbox">
+                            <label for="completed-page-check">
+                                Completed 
+                                <span class="filterNumber">(21)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="abandoned-page-check" type="checkbox">
+                            <label for="abandoned-page-check">
+                                Abandonded 
+                                <span class="filterNumber">(15)</span>
                             </label>
                         </li>
                         <li>
@@ -22,7 +65,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li ng-show="selection == 'all' || selection == 'copyingorders'">
                 <h3><a href="#" class="filter-toggler expanded">Copying orders</a></h3>
                 <div class="filter-togglee">
                     <ul>
@@ -31,6 +74,34 @@
                             <label for="new-copying-order">
                                 New 
                                 <span class="filterNumber">(84)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="pending-copying-order" type="checkbox">
+                            <label for="pending-copying-order">
+                                Pending 
+                                <span class="filterNumber">(16)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="inprogress-copying-order" type="checkbox">
+                            <label for="inprogress-copying-order">
+                                In progress 
+                                <span class="filterNumber">(24)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="completed-copying-order" type="checkbox">
+                            <label for="completed-copying-order">
+                                Completed 
+                                <span class="filterNumber">(13)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="dispatched-copying-order" type="checkbox">
+                            <label for="dispatched-copying-order">
+                                Dispatched 
+                                <span class="filterNumber">(32)</span>
                             </label>
                         </li>
                         <li>
@@ -62,7 +133,21 @@
                     </ul>
                 </div>
             </li>
+            <li>
+                <h3><a href="#" class="filter-toggler expanded">Start new search</a></h3>
+                <div class="filter-togglee">
+                    <ul>
+                        <li>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search..." class="">
+                                <input type="submit" value="Search">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
+    </form>
     </div>
     <div class="col ends-at-two-thirds clr box">
         <ul id="search-control-panel">
