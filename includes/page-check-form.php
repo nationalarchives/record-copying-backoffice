@@ -62,8 +62,8 @@
         <div class="button-holder">
             <input type="hidden" name="status" value="page-check-completed">
             <a href="abandon.php" class="abandon-link">Abandon page check</a>
-            <input type="submit" value="Update"/>
-            <input type="submit" value="Update and send">
+            <input type="submit" value="Save"/>
+            <input type="submit" value="Send to customer">
         </div>
 
     <?php endif; ?>
