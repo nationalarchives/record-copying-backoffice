@@ -141,6 +141,19 @@
                 </div>
             </li>
             <li>
+                <h3><a href="#" class="filter-toggler expanded">Completed date</a></h3>
+                <div class="filter-togglee">
+                    <ul>
+                        <li>
+                            <div class="search-box">
+                                <input type="date" placeholder="dd/mm/yyyy" class="">
+                                <input type="submit" value="Search">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
                 <h3><a href="#" class="filter-toggler expanded">Start new search</a></h3>
                 <div class="filter-togglee">
                     <ul>

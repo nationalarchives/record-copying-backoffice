@@ -82,7 +82,7 @@ app.factory("dataService", function() {
             }
         ]},
         getSearchOptions : function() {
-            return ["Customer's name", "Customer's postcode", "Order reference number", "Date due", "Date range", "Document reference", "Category"];
+            return ["Customer's name", "Customer's postcode", "Order reference number", "Date due", "Date range", "Completed date", "Document reference", "Category"];
         }
     }
 })
