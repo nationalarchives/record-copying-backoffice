@@ -82,7 +82,7 @@ app.factory("dataService", function() {
             }
         ]},
         getSearchOptions : function() {
-            return ["Customer's name", "Customer's postcode", "Order reference number", "Date due", "Date range", "Completed date", "Document reference", "Category"];
+            return ["Customer's name", "Customer's postcode", "Order reference number", "Date due", "Date range", "Date completed", "Document reference", "Category"];
         }
     }
 })
@@ -108,7 +108,7 @@ app.controller("searchForms", function($scope, $log, dataService) {
     }
 
     $scope.isDateSearch = function(str) {
-        if(str == "Date") {
+        if(str == "Date due" || str == "Date completed") {
             return true;
         } else { 
             return false;
