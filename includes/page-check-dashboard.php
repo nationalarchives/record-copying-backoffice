@@ -1,4 +1,24 @@
+<div class="dashboard-filters">
+  <small>
+      <a href="generic-aggregate-options-page.php">All</a> (142) | 
+      <a href="generic-aggregate-options-page.php">Requests received</a> (12) | 
+      <a href="generic-aggregate-options-page.php">In progress</a> (17) | 
+      <a href="generic-aggregate-options-page.php">Complete</a> (51) | 
+      <a href="generic-aggregate-options-page.php">On hold</a> (2) | 
+      <a href="generic-aggregate-options-page.php">Expired</a> (6) | 
+      <a href="generic-aggregate-options-page.php">Abandoned</a> (29) | 
+      <a href="generic-aggregate-options-page.php">Overdue</a> (25)
+  </small>
+</div>
 <div class="dashboard-component">
+    <form method="get">
+        <label class="inline" for="week-selection">Show week commencing</label>
+        <select name="week-selection" id="week-selection">
+            <option value="">Monday 19th January 2015</option>
+            <option value="" selected>Monday 26th January 2015</option>
+            <option value="">Monday 2nd February 2015</option>
+        </select>
+    </form>
     <div class="responsive-table">
         <table class="multi-total">
             <caption class="visually-hidden">Page count dashboard</caption>

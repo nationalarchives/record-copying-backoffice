@@ -1,4 +1,21 @@
+<div class="dashboard-filters">
+  <small>
+    <a href="generic-aggregate-options-page.php">All</a> (157) | 
+    <a href="generic-aggregate-options-page.php">Orders received</a> (16) | 
+    <a href="generic-aggregate-options-page.php">In progress</a> (49) | 
+    <a href="generic-aggregate-options-page.php">Complete & dispatched</a> (74) | 
+    <a href="generic-aggregate-options-page.php">Overdue</a> (18)
+  </small>
+</div>
 <div class="dashboard-component">
+    <form method="get">
+        <label class="inline" for="week-selection">Show week commencing</label>
+        <select name="week-selection" id="week-selection">
+            <option value="">Monday 19th January 2015</option>
+            <option value="" selected>Monday 26th January 2015</option>
+            <option value="">Monday 2nd February 2015</option>
+        </select>
+    </form>
     <div class="responsive-table">
         <table class="multi-total">
             <caption class="visually-hidden">Copying dashboard</caption>
