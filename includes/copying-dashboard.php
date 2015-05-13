@@ -1,9 +1,9 @@
 <div class="dashboard-filters">
   <small>
-    <a href="generic-aggregate-options-page.php">All</a> (157) | 
     <a href="generic-aggregate-options-page.php">Orders received</a> (16) | 
-    <a href="generic-aggregate-options-page.php">In progress</a> (49) | 
-    <a href="generic-aggregate-options-page.php">Complete & dispatched</a> (74) | 
+    <a href="generic-aggregate-options-page.php">Suspended</a> (16) | 
+    <a href="generic-aggregate-options-page.php">Being copied</a> (41) | 
+    <a href="generic-aggregate-options-page.php">Complete &amp; dispatched</a> (74) | 
     <a href="generic-aggregate-options-page.php">Overdue</a> (18)
   </small>
 </div>

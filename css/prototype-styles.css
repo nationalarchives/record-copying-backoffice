@@ -183,6 +183,10 @@ input[type=date] {
     padding: 5px 3px;
 }
 
+.apply-filters input[type=submit] {
+    float: right;
+}
+
 .new-page {
     page-break-inside: avoid;
 }

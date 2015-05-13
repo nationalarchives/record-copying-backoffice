@@ -1,12 +1,10 @@
 <div class="dashboard-filters">
   <small>
-      <a href="generic-aggregate-options-page.php">All</a> (142) | 
       <a href="generic-aggregate-options-page.php">Requests received</a> (12) | 
       <a href="generic-aggregate-options-page.php">In progress</a> (17) | 
-      <a href="generic-aggregate-options-page.php">Complete</a> (51) | 
+      <a href="generic-aggregate-options-page.php">Cancelled</a> (51) | 
       <a href="generic-aggregate-options-page.php">On hold</a> (2) | 
       <a href="generic-aggregate-options-page.php">Expired</a> (6) | 
-      <a href="generic-aggregate-options-page.php">Abandoned</a> (29) | 
       <a href="generic-aggregate-options-page.php">Overdue</a> (25)
   </small>
 </div>
@@ -45,30 +43,6 @@
                 <td><a href="">6</a></td>
                 <td><a href="">6</a></td>
                 <td><a href="">28</a></td>
-            </tr>
-            <tr>
-                <th scope="row" data-longform="Certificates of naturalisation" data-shortform="Cert. Nat"><span>Certificates of natuaralisation</span></th>
-                <td><a href="">25</a></td>
-                <td><a href="">6</a></td>
-                <td><a href="">2</a></td>
-                <td><a href="">3</a></td>
-                <td><a href="">4</a></td>
-                <td><a href="">5</a></td>
-                <td>0</td>
-                <td><a href="">7</a></td>
-                <td><a href="">28</a></td>
-            </tr>
-            <tr>
-                <th scope="row">Total</th>
-                <td><a href="">25</a></td>
-                <td><a href="">6</a></td>
-                <td><a href="">2</a></td>
-                <td><a href="">3</a></td>
-                <td><a href="">4</a></td>
-                <td><a href="">5</a></td>
-                <td><a href="">6</a></td>
-                <td><a href="">7</a></td>
-                <td><a href="">142</a></td>
             </tr>
         </table>
     </div>
