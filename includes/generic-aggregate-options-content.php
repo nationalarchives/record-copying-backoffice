@@ -7,10 +7,10 @@
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <input type="radio" name="filterresults" value="pagechecks" label="Page checks" ng-model="selection"> <label for="pagechecks">Page checks</label>
+                            <input type="radio" name="filterresults" id="pagechecks" value="pagechecks" label="Page checks" ng-model="selection"> <label for="pagechecks">Page checks</label>
                         </li>
                         <li>
-                            <input type="radio" name="filterresults" value="copyingorders" label="Record copying orders" ng-model="selection"> <label for="copyingorders">Record copying orders</label>
+                            <input type="radio" name="filterresults" id="copyingorders" value="copyingorders" label="Record copying orders" ng-model="selection"> <label for="copyingorders">Record copying orders</label>
                         </li>
                     </ul>
                 </div>
