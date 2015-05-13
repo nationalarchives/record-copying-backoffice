@@ -160,7 +160,7 @@
             <ul id="search-results">
                 <?php for ($i=0; $i < 38; $i++) { 
                     $rand = "RC " . rand(1000000, 9000000) . " 15";
-                    $statuses = array('Pending page check', 'Page check in progress', 'Copy order pending', 'Record copying order in progress', 'Record copying order complete and dispatched'); 
+                    $statuses = array('Page check request received', 'Page check in progress', 'Page check on hold', 'Page check cancelled', 'Record copying order received', 'Record copying order in progress', 'Record copying order complete and dispatched'); 
                     $randomStatus = $statuses[array_rand($statuses)];
                     printf("<li class='order-item'><h3><a href='details.php'>%s</a></h3>", $rand);
                     printf("<p class='smaller'><strong>Status:</strong> %s</p>", $randomStatus);
