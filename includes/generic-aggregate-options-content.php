@@ -7,31 +7,23 @@
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <select ng-model="selection" ng-init="selection='all'">
-                                <option value="all" label="All" class="">All</option>
-                                <option value="pagechecks" label="Page checks">Page checks</option>
-                                <option value="copyingorders" label="Copying orders">Copying orders</option>
-                            </select>
+                            <input type="radio" name="filterresults" value="pagechecks" label="Page checks" ng-model="selection"> <label for="pagechecks">Page checks</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="filterresults" value="copyingorders" label="Record copying orders" ng-model="selection"> <label for="copyingorders">Record copying orders</label>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li ng-show="selection == 'all' || selection == 'pagechecks'">
+            <li ng-show="selection == 'pagechecks'">
                 <h3><a href="#" class="filter-toggler expanded">Page checks</a></h3>
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <input checked="checked" id="new-page-check" type="checkbox">
-                            <label for="new-page-check">
-                                New 
-                                <span class="filterNumber">(42)</span>
-                            </label>
-                        </li>
-                        <li>
                             <input id="requests-page-check" type="checkbox">
                             <label for="requests-page-check">
                                 Requests received 
-                                <span class="filterNumber">(12)</span>
+                                <span class="filterNumber">(54)</span>
                             </label>
                         </li>
                         <li>
@@ -42,9 +34,9 @@
                             </label>
                         </li>
                         <li>
-                            <input id="completed-page-check" type="checkbox">
-                            <label for="completed-page-check">
-                                Completed 
+                            <input id="cancelled-page-check" type="checkbox">
+                            <label for="cancelled-page-check">
+                                Cancelled 
                                 <span class="filterNumber">(51)</span>
                             </label>
                         </li>
@@ -62,60 +54,39 @@
                                 <span class="filterNumber">(6)</span>
                             </label>
                         </li>
-                        <li>
-                            <input id="abandoned-page-check" type="checkbox">
-                            <label for="abandoned-page-check">
-                                Abandonded 
-                                <span class="filterNumber">(29)</span>
-                            </label>
-                        </li>
-                        <li>
-                            <input id="overdue-page-check" type="checkbox">
-                            <label for="overdue-page-check">
-                                Overdue
-                                <span class="filterNumber">(25)</span>
-                            </label>
-                        </li>
                     </ul>
                 </div>
             </li>
-            <li ng-show="selection == 'all' || selection == 'copyingorders'">
+            <li ng-show="selection == 'copyingorders'">
                 <h3><a href="#" class="filter-toggler expanded">Record copying orders</a></h3>
                 <div class="filter-togglee">
                     <ul>
                         <li>
-                            <input id="new-copying-order" type="checkbox">
-                            <label for="new-copying-order">
-                                New 
-                                <span class="filterNumber">(84)</span>
+                            <input id="received-copying-order" type="checkbox">
+                            <label for="received-copying-order">
+                                Orders received 
+                                <span class="filterNumber">(16)</span>
                             </label>
                         </li>
                         <li>
-                            <input id="orders-copying-order" type="checkbox">
-                            <label for="orders-copying-order">
-                                Orders received 
+                            <input id="suspended-copying-order" type="checkbox">
+                            <label for="suspended-copying-order">
+                                Suspended 
                                 <span class="filterNumber">(16)</span>
                             </label>
                         </li>
                         <li>
                             <input id="inprogress-copying-order" type="checkbox">
                             <label for="inprogress-copying-order">
-                                In progress 
-                                <span class="filterNumber">(49)</span>
+                                Being copied 
+                                <span class="filterNumber">(41)</span>
                             </label>
                         </li>
                         <li>
                             <input id="completed-copying-order" type="checkbox">
                             <label for="completed-copying-order">
-                                Completed & dispatched
+                                Completed &amp; dispatched
                                 <span class="filterNumber">(74)</span>
-                            </label>
-                        </li>
-                        <li>
-                            <input id="overdue-copying-order" type="checkbox">
-                            <label for="overdue-copying-order">
-                                Overdue 
-                                <span class="filterNumber">(18)</span>
                             </label>
                         </li>
                     </ul>
@@ -128,12 +99,14 @@
                         <li>
                             <label for="week-selection">From:</label>
                             <select name="week-selection" id="week-selection">
+                                <option value="">No date selected</option>
                                 <option value="">1 February 2015</option>
                             </select>
                         </li>                                                
                         <li>
                             <label for="week-selection">To:</label>
                             <select name="week-selection" id="week-selection">
+                                <option value="">No date selected</option>
                                 <option value="">1 February 2015</option>
                             </select>
                         </li> 
@@ -141,18 +114,14 @@
                 </div>
             </li>
             <li>
-                <h3><a href="#" class="filter-toggler expanded">Completed date</a></h3>
-                <div class="filter-togglee">
-                    <ul>
-                        <li>
-                            <div class="search-box">
-                                <input type="date" placeholder="dd/mm/yyyy" class="">
-                                <input type="submit" value="Search">
-                            </div>
-                        </li>
-                    </ul>
+                <div class="apply-filters clr">
+                    <input name="Apply filters" type="submit" value="Apply filters" alt="Apply filters">
                 </div>
             </li>
+        </ul>
+    </form>
+    <form>
+        <ul>
             <li>
                 <h3><a href="#" class="filter-toggler expanded">Start new search</a></h3>
                 <div class="filter-togglee">

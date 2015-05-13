@@ -1,12 +1,10 @@
 <div class="dashboard-filters">
   <small>
-      <a href="generic-aggregate-options-page.php">All</a> (142) | 
       <a href="generic-aggregate-options-page.php">Requests received</a> (12) | 
       <a href="generic-aggregate-options-page.php">In progress</a> (17) | 
-      <a href="generic-aggregate-options-page.php">Complete</a> (51) | 
+      <a href="generic-aggregate-options-page.php">Cancelled</a> (51) | 
       <a href="generic-aggregate-options-page.php">On hold</a> (2) | 
       <a href="generic-aggregate-options-page.php">Expired</a> (6) | 
-      <a href="generic-aggregate-options-page.php">Abandoned</a> (29) | 
       <a href="generic-aggregate-options-page.php">Overdue</a> (25)
   </small>
 </div>
