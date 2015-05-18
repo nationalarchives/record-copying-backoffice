@@ -3,7 +3,7 @@
         <nav id="breadcrumb">
             <ul>
                 <li><a href="http://www.nationalarchives.gov.uk/">Home</a><a href="">Reports</a></li>
-                <li><a href="">Reference number: RC00001</a></li>
+                <li><a href="">Reference number: <?php echo(REFERENCE_NUMBER);?></a></li>
                 <li>Order abandonment</li>
             </ul>
         </nav>

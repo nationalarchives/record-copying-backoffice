@@ -34,3 +34,18 @@ function checkFileName($name) {
         return false;
     }
 }
+
+function displayTargetDateOrLink($targetDate) {
+    if($targetDate) {
+
+        $arrayOfDate = explode('-', $targetDate);
+
+        $reversedArrayOfDate = array_reverse($arrayOfDate);
+
+        $reversedDateString = implode('/', $reversedArrayOfDate);
+
+        echo '<strike>31/3/2014</strike> target date revised to ' . $reversedDateString;
+    } else {
+        echo '31/3/2014 <a id="revise-target-date" href="revise-target-date.php">Revise target date</a>';
+    }
+}

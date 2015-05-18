@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+//START OF Managing statuses
 if(isset($_GET['status'])) {
     $status = $_GET['status'];
 } else {
@@ -21,6 +23,14 @@ switch($status) {
     default:
         $statusText = "No status passed in GET array";
 }
+// END OF managing statues
+
+// START OF managing target date
+
+$targetDate = filter_input(INPUT_GET, 'target-date');
+
+// END OF managing target date
+
 ?>
 <section class="row new-page">
     <div class="col starts-at-full clr holding-box">
@@ -33,7 +43,7 @@ switch($status) {
                 <caption class="visually-hidden">Document and request details</caption>
                 <tr>
                     <th scope="row">Order reference number</th>
-                    <td>RC 5674563 15</td>
+                    <td><?php echo(REFERENCE_NUMBER); ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Status</th>
@@ -41,7 +51,7 @@ switch($status) {
                 </tr>
                 <tr>
                     <th class="row">Target date</th>
-                    <td>31 March 2014</td>
+                    <td><?php displayTargetDateOrLink($targetDate); ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Document reference</th>
