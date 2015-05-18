@@ -208,6 +208,12 @@ input[type=date] {
     color: #EFEFEF;
 }
 
+#revise-target-date {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;

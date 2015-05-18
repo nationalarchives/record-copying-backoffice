@@ -10,10 +10,6 @@
                             <input id="temp-location" type="text" value="Shelf 25"/>
                         </div>
                         <div class="field-row">
-                            <label for="target-date">Revised target date</label>
-                            <input id="target-date" type="text"/>
-                        </div>
-                        <div class="field-row">
                             <label for="a3">Pages A3</label>
                             <input id="a3" type="number"/>
                         </div>
