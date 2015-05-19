@@ -3,6 +3,10 @@ html {
     overflow-x: hidden;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
 .holds-columns-together {
     margin-bottom: 1em;
 }
@@ -187,7 +191,7 @@ input[type=date] {
     float: right;
 }
 
-.no-js .non-js-search {
+.js .non-js-search {
     display:none;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en-gb" class="no-js">
 <?php require_once('includes/head.php'); ?>
 <body class="create-page-check">
 <?php require_once('includes/header.php'); ?>
