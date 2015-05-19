@@ -187,6 +187,10 @@ input[type=date] {
     float: right;
 }
 
+.no-js .non-js-search {
+    display:none;
+}
+
 .new-page {
     page-break-inside: avoid;
 }
