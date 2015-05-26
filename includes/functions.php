@@ -44,7 +44,7 @@ function displayTargetDateOrLink($targetDate) {
 
         $reversedDateString = implode('/', $reversedArrayOfDate);
 
-        echo '<strike>31/3/2014</strike> target date revised to ' . $reversedDateString;
+        echo '<strike>31/3/2014</strike> target date revised to ' . $reversedDateString . '<span id="revise-target-date">  <a href="revise-target-date-history.php">See revision history</a> or <a href="revise-target-date.php">revise target date</a></span>';
     } else {
         echo '31/3/2014 <a id="revise-target-date" href="revise-target-date.php">Revise target date</a>';
     }
