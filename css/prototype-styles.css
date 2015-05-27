@@ -66,8 +66,12 @@ tr {
     background-color: #FFF;
 }
 
-.dashboard tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #EFEFEF;
+}
+
+.mail-log table tr {
+    background-color: #FFF;
 }
 
 .multi-total {

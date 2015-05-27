@@ -1,11 +1,12 @@
-<section class="row new-page">
+<section class="row new-page mail-log">
     <div class="col starts-at-full clr holding-box">
         <div class="heading-holding-banner">
 	  <h1><span><span>Mail log</span></span></h1>
         </div>
         <div class="breather">
 	  <h2 class="inline">Mail log for: <?php echo REFERENCE_NUMBER; ?></h2>
-
+      <form action="mail-log.php" method="get">
+        <?php $emailid = 0 ?>
 	  <table>
                     <tbody>
                         <td>
@@ -15,7 +16,7 @@
                             <b>Subject : </b>Page check request completed <?php echo REFERENCE_NUMBER; ?> <br><br>
                             </td>
                             <td class="category-form">
-                            <?php require 'mail-log-category-form.php'; ?>
+                            <?php require('includes/mail-log-category-form.php'); ?>
                             </td>
                     </tr>
                     <tr>
@@ -43,7 +44,7 @@
                             <b>Subject : </b>Re: Page check request confirmation <?php echo REFERENCE_NUMBER; ?> <br><br>
                             </td>
                             <td class="category-form">
-                            <?php require 'mail-log-category-form.php'; ?>
+                            <?php require('includes/mail-log-category-form.php'); ?>
                             </td>
                     </tr>
                     <tr>
@@ -76,7 +77,7 @@
                             <b>Subject : </b>Page check request confirmation <?php echo REFERENCE_NUMBER; ?> <br><br>
                             </td>
                             <td class="category-form">
-                            <?php require 'mail-log-category-form.php'; ?>
+                            <?php require('includes/mail-log-category-form.php'); ?>
                             </td>
                     </tr>
                     <tr>
@@ -98,7 +99,9 @@
                             <hr>
                         </td>
                     </tr>
-            </tbody></table>
-        </div>
+            </tbody>
+        </table>
+        </form>
+    </div>
 </section>
 

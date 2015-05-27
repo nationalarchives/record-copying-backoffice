@@ -60,7 +60,7 @@ $.createMultiPrintLink = function(count) {
 }
 
 
-$("#email-category").change(function () {
+$(".email-category").change(function () {
     this.form.submit();
 });
 
