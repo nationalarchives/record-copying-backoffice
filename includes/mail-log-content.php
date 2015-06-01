@@ -7,7 +7,7 @@
         </div>
         <div class="breather">
 	  <h2 class="inline">Mail log for: <?php echo REFERENCE_NUMBER; ?></h2>
-      <form action="mail-log.php" method="get">
+      
 	  <table>
                     <tbody>
                         <td>
@@ -16,8 +16,8 @@
                             <b>Send On : </b>Thu 07/05/2015 14:49 <br>
                             <b>Subject : </b>Page check request completed <?php echo REFERENCE_NUMBER; ?> <br><br>
                             </td>
-                            <td class="category-form">
-                            <?php require('includes/mail-log-category-form.php'); ?>
+                            <td>
+                            &nbsp;
                             </td>
                     </tr>
                     <tr>
@@ -77,8 +77,8 @@
                             <b>Send On : </b>Thu 07/05/2015 14:47 <br>
                             <b>Subject : </b>Page check request confirmation <?php echo REFERENCE_NUMBER; ?> <br><br>
                             </td>
-                            <td class="category-form">
-                            <?php require('includes/mail-log-category-form.php'); ?>
+                            <td>
+                            &nbsp;
                             </td>
                     </tr>
                     <tr>
@@ -102,7 +102,6 @@
                     </tr>
             </tbody>
         </table>
-        </form>
     </div>
 </section>
 
