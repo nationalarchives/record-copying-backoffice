@@ -1,3 +1,5 @@
+<?php $emailid = 0 ?>
+
 <section class="row new-page mail-log">
     <div class="col starts-at-full clr holding-box">
         <div class="heading-holding-banner">
@@ -6,7 +8,6 @@
         <div class="breather">
 	  <h2 class="inline">Mail log for: <?php echo REFERENCE_NUMBER; ?></h2>
       <form action="mail-log.php" method="get">
-        <?php $emailid = 0 ?>
 	  <table>
                     <tbody>
                         <td>
