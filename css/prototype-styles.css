@@ -70,6 +70,10 @@ tr:nth-child(even) {
     background-color: #EFEFEF;
 }
 
+.mail-log table tr {
+    background-color: #FFF;
+}
+
 .multi-total {
     margin-bottom: 1em;
 }
@@ -191,8 +195,16 @@ input[type=date] {
     float: right;
 }
 
-.js .non-js-search {
+.js .non-js-search, .js .submit-category-form {
     display:none;
+}
+
+td.category-form {
+    vertical-align: top;
+}
+
+.float-right {
+    float: right;
 }
 
 .new-page {

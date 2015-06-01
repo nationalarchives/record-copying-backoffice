@@ -60,6 +60,11 @@ $.createMultiPrintLink = function(count) {
 }
 
 
+$(".email-category").change(function () {
+    this.form.submit();
+});
+
+
 // Angular
 
 var app = angular.module("recordCopyingBackOffice", []);
