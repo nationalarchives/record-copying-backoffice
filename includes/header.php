@@ -22,7 +22,8 @@
                     <li id="dashboard"><a href="index.php">Dashboard</a></li>
                     <li id="admin-tools"><a href="">Admin tools</a></li>
                     <li id="staff-audit"><a href="">Staff audit</a></li>
-                    <li id="create-page-check"><a href="">Create page check</a></li>
+                    <li id="create-page-check"><a href="">Create page check</a>
+                    <li id="create-record-copying-order"><a href="">Create record copying order</a></li>
                     <li id="printing"><a href="">Printing</a></li>
                     <li id="reports"><a href="page-checks-due.php">Reports</a></li>
                     <li id="refunds"><a href="">Refunds</a></li>
