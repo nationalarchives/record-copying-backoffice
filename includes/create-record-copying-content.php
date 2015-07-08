@@ -10,7 +10,7 @@ else {
 <section class="row new-page">
     <div class="col starts-at-full clr holding-box">
         <div class="heading-holding-banner">
-	  <h1><span><span>New record copying order</span></span></h1>
+	  <h1><span><span>Create copying order</span></span></h1>
         </div>
         <div class="breather">
             <h2 class="visually-hidden">Search</h2>
