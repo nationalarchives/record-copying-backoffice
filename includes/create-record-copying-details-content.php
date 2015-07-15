@@ -145,6 +145,12 @@
                     </div>
                 </div>
             </fieldset>
+            <?php if(!checkFileName('multi-print.php')) : ?>
+                <div class="button-holder">
+                    <input type="submit" value="Save"/>
+                </div>
+
+            <?php endif; ?>
         </form>
     </div>
 
