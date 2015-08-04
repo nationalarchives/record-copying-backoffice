@@ -22,7 +22,7 @@
                         <th>Amount</th>
                     </tr>
                     <tr>
-                        <td><a href="#">R/15/00172073R</a></td>
+                        <td><a href="refund.php?status=pending">R/15/00172073R</a></td>
                         <td>C671463</td>
                         <td>01/03/2015</td>
                         <td>Refund</td>
@@ -30,7 +30,7 @@
                         <td>14.20</td>
                     </tr>
                     <tr>
-                        <td><a href="#">R/15/00172732R</a></td>
+                        <td><a href="refund.php?status=pending">R/15/00172732R</a></td>
                         <td>C671463</td>
                         <td>26/04/2015</td>
                         <td>Refund</td>
@@ -38,7 +38,7 @@
                         <td>19.50</td>
                     </tr>
                     <tr>
-                        <td><a href="#">R/15/00172304R</a></td>
+                        <td><a href="refund.php?status=pending">R/15/00172304R</a></td>
                         <td>C670721</td>
                         <td>22/05/2015</td>
                         <td>Refund</td>

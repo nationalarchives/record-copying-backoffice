@@ -259,7 +259,7 @@ td.category-form {
     margin-bottom: 1em;
 }
 
-.admin-tools table {
+.admin-tools table, .refund table {
     width: 100%;
     text-align: left;
 }
