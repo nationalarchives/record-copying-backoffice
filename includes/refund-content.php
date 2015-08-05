@@ -175,6 +175,31 @@
                     ?>
                 </div>
             </section>
+            <section class="admin-component">
+                <h3>Transaction history</h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Date</th>
+                        <th>Transaction type</th>
+                        <th>Amount</th>
+                        <th>Transaction status</th>
+                    </tr>
+                    <tr>
+                        <td>01/03/2015</a></td>
+                        <td>Authorisation</td>
+                        <td>0.00</td>
+                        <td>Transaction approved</td>
+                    </tr>
+                    <tr>
+                        <td>01/03/2015</a></td>
+                        <td>Captured</td>
+                        <td>14.20</td>
+                        <td>Transaction approved</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
 
         </div>
