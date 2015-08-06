@@ -264,6 +264,15 @@ td.category-form {
     text-align: left;
 }
 
+.copy-order-details table {
+    text-align: left;
+}
+
+.suspended-history table {
+    text-align: left;
+    width: 100%;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;
