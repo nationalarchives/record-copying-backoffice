@@ -239,6 +239,50 @@ td.category-form {
     border-top: 1px solid #ddd;
 }
 
+.admin-tools-menu li {
+    list-style-image: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1em;
+    padding-top: 8px;
+    padding-bottom: 13px;
+}
+
+.admin-tools-menu li.selected {
+    padding-bottom: 8px;
+    border-bottom: 5px solid #DEDEDE;
+}
+
+.admin-component {
+    padding: 1em;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 1em;
+}
+
+.admin-tools table, .refund table {
+    width: 100%;
+    text-align: left;
+}
+
+.copy-order-details table {
+    text-align: left;
+}
+
+.suspended-history table {
+    text-align: left;
+    width: 100%;
+}
+
+.uploaded-file {
+    font-size: 0.85em;
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background-color: #EFEFEF;
+    border-radius: 3px;
+    border: 1px solid #CDCDCD;
+    margin-bottom: 0.5em;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;

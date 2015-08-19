@@ -20,12 +20,12 @@
             <div id="account-controls" class="container">
                 <ul>
                     <li id="dashboard"><a href="index.php">Dashboard</a></li>
-                    <li id="admin-tools"><a href="">Admin tools</a></li>
+                    <li id="admin-tools"><a href="admin-tools.php">Admin tools</a></li>
                     <li id="staff-audit"><a href="">Staff audit</a></li>
-                    <li id="create-page-check"><a href="">Create page check</a></li>
+                    <li id="create-page-check"><a href="">Create page check</a>
+                    <li id="create-record-copying-order"><a href="">Create copying order</a></li>
                     <li id="printing"><a href="">Printing</a></li>
                     <li id="reports"><a href="page-checks-due.php">Reports</a></li>
-                    <li id="refunds"><a href="">Refunds</a></li>
                     <li id="postage"><a href="">Postage</a></li>
                     <li id="suspended-jobs" class="suspended"><a href=""><span>Suspended jobs (16)</span></a></li>
                 </ul>
