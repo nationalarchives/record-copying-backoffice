@@ -273,6 +273,16 @@ td.category-form {
     width: 100%;
 }
 
+.uploaded-file {
+    font-size: 0.85em;
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background-color: #EFEFEF;
+    border-radius: 3px;
+    border: 1px solid #CDCDCD;
+    margin-bottom: 0.5em;
+}
+
 @media only screen and (min-width: 1024px) {
     th, td {
         padding: 1em;

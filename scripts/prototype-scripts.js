@@ -45,7 +45,7 @@ $.countElsWithSpecificText = function(selector, text) {
         }
     });
     return counter; 
-}
+};
 
 $.createMultiPrintLink = function(count) {
     var message = "";
@@ -57,12 +57,16 @@ $.createMultiPrintLink = function(count) {
 
     (message) ? $('#select-and-print').text(message).show() : $('#select-and-print').hide();
     
-}
+};
 
 
 $(".email-category").change(function () {
     this.form.submit();
 });
+
+$('.automaticallySubmitted').on('change', function() {
+    $(this).submit();
+})
 
 
 // Angular
